@@ -1,0 +1,153 @@
+site_name: 觉察之美：身体美学与医美决策心理学
+site_description: 一本关于医美决策心理学的跨学科学术著作
+site_author: Claude AI
+site_url: https://psycho-aesthetics.com
+
+# Repository
+repo_name: psycho-aesthetics/book
+repo_url: https://github.com/psycho-aesthetics/book
+edit_uri: ""
+
+# Theme
+theme:
+  name: material
+  language: zh
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
+    - content.tooltips
+    - header.autohide
+    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate
+  palette:
+    - scheme: default
+      primary: pink
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: 切换至深色模式
+    - scheme: slate
+      primary: pink
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: 切换至浅色模式
+  font:
+    text: Noto Sans SC
+    code: Roboto Mono
+
+# Plugins
+plugins:
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true
+
+# Customization
+extra:
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/psycho-aesthetics
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/psycho_aesthetics
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:contact@psycho-aesthetics.com
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Navigation
+nav:
+  - 首页: index.md
+  - 美的根基:
+    - 绪论：从身体到自我——一场美的觉察之旅: foundation/00_introduction.md
+    - 美的沉思：从审美判断到身体哲学: foundation/01_aesthetic_contemplation.md
+    - 科学的视角：心理学研究与批判性思维: foundation/02_scientific_perspective.md
+    - 美的测量：从黄金比例到算法评分: foundation/03_measuring_beauty.md
+  - 社会镜像:
+    - 文化模具：身体认同的社会建构: social_mirror/04_cultural_construction.md
+    - 数字镜像：社交媒体与算法审美: social_mirror/05_digital_mirrors.md
+  - 内在世界:
+    - 人格滤镜：性格如何塑造审美: inner_world/06_personality_filters.md
+    - 身体意象：镜中自我的重塑: inner_world/07_body_image.md
+    - 医美与亲密关系：爱、欲望与身体的协商: inner_world/08_intimate_relationships.md
+  - 决策黑箱:
+    - 认知偏误：非理性决策的心理机制: decision_box/09_cognitive_biases.md
+    - 情绪与冲动：情感如何左右医美选择: decision_box/10_emotions_and_impulses.md
+    - 理性选择理论：最优化的医美决策框架: decision_box/11_rational_choice_theory.md
+  - 信任的桥梁:
+    - 医患沟通：信任与专业的平衡: trust_bridge/12_doctor_patient_communication.md
+    - 咨询艺术：心理学在医美对话中的应用: trust_bridge/13_counseling_artistry.md
+  - 失序的追求:
+    - 成瘾与依赖：医美的黑暗面: disorder_pursuit/14_addiction_and_dependency.md
+    - 创伤与恢复：危机干预与心理治疗: disorder_pursuit/15_trauma_and_recovery.md
+  - 未来的图景:
+    - 未来图景：技术发展与美学观念的演变: future_visions/16_future_visions.md
+  - 关于本书: about.md
+
+# Copyright
+copyright: |
+  &copy; 2024 Claude AI - 
+  <a href="#__consent">更改Cookie设置</a>
